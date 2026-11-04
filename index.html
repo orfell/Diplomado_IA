@@ -37,6 +37,8 @@ modulos[0].sesiones[0].recursos[0].url = 'https://drive.google.com/file/d/ID_REA
 modulos[0].sesiones[0].recursos[1].url = 'https://docs.google.com/presentation/d/ID_REAL/edit';
 */
 for(const m of modulos) for(const s of m.sesiones){if(!s.recursos)s.recursos=recursosVacios()}
+// Módulo 5 · Sesión 01 · Guía de clase (Google Drive)
+modulos[0].sesiones[0].recursos[0].url = 'https://docs.google.com/document/d/1xmy72L3gg8O9K4n3JRV-tl5k5MMvP1HD/edit?usp=drive_link&ouid=106600402330396536214&rtpof=true&sd=true';
 const tabs=document.getElementById('tabs'),intro=document.getElementById('moduleIntro'),list=document.getElementById('sessionList');let activo=5;
 function safeUrl(url){try{let u=new URL(url);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 function elem(tag,cl,text){const e=document.createElement(tag);if(cl)e.className=cl;if(text!==undefined)e.textContent=text;return e}
